@@ -173,6 +173,8 @@
   .proj-media img, .proj-media video{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
   .proj-card:hover .proj-media img, .proj-card:hover .proj-media video{ transform:scale(1.06); }
   .proj-media::after{ content:''; position:absolute; inset:0; background:linear-gradient(180deg, transparent 55%, rgba(10,11,16,0.55)); pointer-events:none; }
+  .proj-media .twind-logo{ position:absolute; top:14px; left:14px; width:auto; height:16%; max-height:60px; object-fit:contain; z-index:2; pointer-events:none; filter:drop-shadow(0 3px 14px rgba(0,0,0,0.55)); transition:none; }
+  .proj-card:hover .proj-media .twind-logo{ transform:none; }
   .proj-media.placeholder{ display:flex; align-items:center; justify-content:center; }
 
   /* full-frame screenshots: never crop, letterbox instead */
@@ -385,11 +387,12 @@
           <video autoplay muted loop playsinline poster="img/proj-twind42-poster.jpg">
             <source src="img/proj-twind42.mp4" type="video/mp4">
           </video>
+          <img src="img/twind42-logo.png" alt="Logo Twind42" class="twind-logo">
         </div>
         <div class="proj-body">
           <span class="proj-flag">Proyecto insignia</span>
           <h3>Twind42 — Energía renovable + IoT + Smart Cities</h3>
-          <p>Turbinas Savonius en rutas y avenidas que generan energía eólica por flujo vehicular, con panel solar superior, sensores de CO₂/clima/tránsito y dashboard de datos en tiempo real. Presentado en NASA Space Apps 2024, Innovatón 2024, Ciudad Futura 2025 y <a href="https://21.edu.ar/siglo-21-en-accion/feria-21-innovacion-y-oportunidades-para-emprender" target="_blank" rel="noopener" style="color:var(--accent1); text-decoration:underline;">Feria 21 de UES21</a>.</p>
+          <p>Turbinas Savonius en rutas y avenidas que generan energía eólica por flujo vehicular, con panel solar superior, sensores de CO₂/clima/tránsito y dashboard de datos en tiempo real. Presentado en Innovatón 2024, Ciudad Futura 2025, <a href="https://21.edu.ar/siglo-21-en-accion/feria-21-innovacion-y-oportunidades-para-emprender" target="_blank" rel="noopener" style="color:var(--accent1); text-decoration:underline;">Feria 21 de UES21</a> y Emprender ConCiencia 2025 de INVAP, donde fue semifinalista.</p>
           <div class="tag-row">
             <span class="tag">IoT</span><span class="tag">Energía renovable</span><span class="tag">Smart Cities</span><span class="tag">Prototipo</span>
             <a href="https://twind42.netlify.app/" target="_blank" rel="noopener" class="tag-link">Ver sitio ↗</a>
@@ -545,10 +548,11 @@
       <div class="reveal">
         <div class="eyebrow">Reconocimientos</div>
         <h2>Logros y participaciones</h2>
-        <div class="achv"><span class="achv-icon">🏆</span><div><b>NASA Space Apps Challenge 2024</b><span>Participación con proyecto Twind42</span></div></div>
+        <div class="achv"><span class="achv-icon">🏆</span><div><b>NASA Space Apps Challenge 2024</b><span>Participación en equipo multidisciplinario con un proyecto sobre exoplanetas</span></div></div>
         <div class="achv"><span class="achv-icon">🚀</span><div><b>Innovatón 2024</b><span>Participación destacada</span></div></div>
         <div class="achv"><span class="achv-icon">🌆</span><div><b>Ciudad Futura 2025</b><span>Presentación de proyecto de innovación urbana</span></div></div>
         <div class="achv"><span class="achv-icon">🎓</span><div><b>Feria 21 — Universidad Siglo 21</b><span>Exposición del proyecto Twind42 · <a href="https://21.edu.ar/siglo-21-en-accion/feria-21-innovacion-y-oportunidades-para-emprender" target="_blank" rel="noopener" style="color:var(--accent1);">Ver nota ↗</a></span></div></div>
+        <div class="achv"><span class="achv-icon">🥈</span><div><b>Emprender ConCiencia 2025 — INVAP</b><span>Semifinalista con proyecto Twind42</span></div></div>
       </div>
     </div>
   </section>
